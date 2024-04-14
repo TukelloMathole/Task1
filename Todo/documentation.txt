@@ -1,0 +1,80 @@
+TodoUpdateController
+
+Description:
+This controller handles updating TodoItems in the database.
+
+Endpoints:
+
+    Update TodoItem
+        Method: PUT
+        Route: /api/TodoUpdate/{id}
+        Description: Updates a TodoItem with the specified ID.
+        Parameters:
+            id (int): The ID of the TodoItem to update.
+            updatedTodo (TodoItem): The updated TodoItem.
+        Response:
+            200 OK: Successfully updated.
+            400 Bad Request: If the provided ID does not match the ID of the TodoItem.
+            404 Not Found: If the TodoItem with the specified ID does not exist.
+            500 Internal Server Error: If an unexpected error occurs during processing.
+
+TodoReadController
+
+Description:
+This controller handles reading TodoItems from the database.
+
+Endpoints:
+
+    Get All TodoItems
+        Method: GET
+        Route: /api/TodoRead
+        Description: Retrieves all TodoItems.
+        Response:
+            200 OK: Successfully retrieved. Returns a list of TodoItems.
+            500 Internal Server Error: If an unexpected error occurs during processing.
+
+    Get TodoItem by ID
+        Method: GET
+        Route: /api/TodoRead/{id}
+        Description: Retrieves a TodoItem with the specified ID.
+        Parameters:
+            id (int): The ID of the TodoItem to retrieve.
+        Response:
+            200 OK: Successfully retrieved. Returns the TodoItem.
+            404 Not Found: If the TodoItem with the specified ID does not exist.
+            500 Internal Server Error: If an unexpected error occurs during processing.
+
+TodoDeleteController
+
+Description:
+This controller handles deleting TodoItems from the database.
+
+Endpoints:
+
+    Delete TodoItem
+        Method: DELETE
+        Route: /api/TodoDelete/{id}
+        Description: Deletes a TodoItem with the specified ID.
+        Parameters:
+            id (int): The ID of the TodoItem to delete.
+        Response:
+            200 OK: Successfully removed.
+            404 Not Found: If the TodoItem with the specified ID does not exist.
+            500 Internal Server Error: If an unexpected error occurs during processing.
+
+TodoController
+
+Description:
+This controller handles creating new TodoItems in the database.
+
+Endpoints:
+
+    Create TodoItem
+        Method: POST
+        Route: /api/Todo
+        Description: Creates a new TodoItem.
+        Request Body: TodoItem object.
+        Response:
+            200 OK: Successfully created. Returns the created TodoItem.
+            400 Bad Request: If the request body is invalid.
+            500 Internal Server Error: If an unexpected error occurs during processing.
