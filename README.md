@@ -15,14 +15,13 @@ To run the Todo API locally, follow these steps:
     locate the Database Folder:
     To install a backed-up database, follow these steps:
 
-    - Locate the backup file (.bak) of the database you want to restore.
-    - Move the backup file to the root directory of your project or inside a folder named Database.
+    - Locate the backup file (.bak) of the database.
+    - Move the backup file to this directory C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\Backup.
     - Open SQL Server Management Studio (SSMS) or a similar tool.
     - Connect to your SQL Server instance.
     - Right-click on Databases in the Object Explorer and select Restore Database.
     - In the Restore Database window, select Device and click the ellipsis (...) to browse for your backup file.
     - Choose the backup file from the root directory or the Database folder and click OK.
-    - Ensure that the destination database name matches the one specified in your appsettings.json.
     - Click OK to restore the database.
     - Once the restore process completes, verify the connection string in appsettings.json to ensure it matches the restored database.
 
