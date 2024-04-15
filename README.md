@@ -52,14 +52,35 @@ The API documentation is available through Swagger. You can access the Swagger U
 
 Here are some examples of how to use the API endpoints:
 
-    To retrieve all TodoItems:
+- To retrieve all TodoItems:
+    ```
+    GET https://localhost:7134/api/TodoRead
+    ```
 
-GET https://localhost:7134/api/TodoRead
+- To retrieve a TodoItem by ID:
+    ```
+    GET https://localhost:7134/api/TodoRead/{id}
+    ```
 
-To create a new TodoItem:
-
-
+- To create a new TodoItem:
+    ```
     POST https://localhost:7134/api/Todo
+    ```
+
+- To update a TodoItem by ID:
+    ```
+    PUT https://localhost:7134/api/TodoUpdate/{id}
+    ```
+
+- To delete a TodoItem by ID:
+    ```
+    DELETE https://localhost:7134/api/TodoDelete/{id}
+    ```
+
+- To retrieve all completed TodoItems:
+    ```
+    GET https://localhost:7134/api/TodoCompleted
+    ```
 
 6. Contributing <a name="contributing"></a>
 
