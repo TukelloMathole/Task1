@@ -77,11 +77,6 @@ Here are some examples of how to use the API endpoints:
     DELETE https://localhost:7134/api/TodoDelete/{id}
     ```
 
-- To retrieve all completed TodoItems:
-    ```
-    GET https://localhost:7134/api/TodoCompleted
-    ```
-
 6. Contributing <a name="contributing"></a>
 
 Contributions to the Todo API are welcome.
